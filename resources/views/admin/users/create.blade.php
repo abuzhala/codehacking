@@ -34,7 +34,7 @@
         </div>
     <div class="form-group">
          {!! Form::label('photo_id', 'Photo:') !!}
-         {!! Form::file('file', null, ['class'=>'form-controller']) !!}
+         {!! Form::file('photo_id', null, ['class'=>'form-controller']) !!}
     </div>
         <div class="form-group">
             {!! Form::submit('Create Post', ['class'=>'btn btn-primary']) !!}
