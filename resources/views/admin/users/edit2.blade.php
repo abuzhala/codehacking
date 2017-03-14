@@ -11,6 +11,7 @@
     </div>
 
     <div class="col-sm-9">
+
         @include('includes.form-error')
 
         {!! Form::model($user, ['method'=>'PATCH', 'action'=>['AdminUsersController@update', $user->id], 'files'=> true]) !!}
@@ -44,7 +45,7 @@
             {!! Form::file('photo_id', null, ['class'=>'form-controller']) !!}
         </div>
         <div class="form-group">
-            {!! Form::submit('Create Post', ['class'=>'btn btn-primary']) !!}
+            {!! Form::submit('Update', ['class'=>'btn btn-primary']) !!}
         </div>
 
         {!! Form::close() !!}
